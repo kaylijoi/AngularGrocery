@@ -7,19 +7,21 @@
               <input type="text" class="form-control" placeholder="Enter grocery items" [(ngModel)]="task" />
               
               <div class="input-group-btn">
-                <button class="btn btn-outline-primary" type="button" (click)="onClick()">
+                <button class="btn btn-primary" type="button" (click)="onClick()">
                     <span>Enter</span>
                 </button>
               </div>
           </div>
+          <ul class="list-group">
+            <li *ngFor="let task of tasks" class="list-group-item">
+                <span> {{ task.name }} </span>
+        
+            </li>
+        </ul>
       </div>
   </div>
 
   <br />
 
-  <ul class="list-group">
-      <li *ngFor="let task of tasks" class="list-group-item">
-          <span> {{ task.name }} </span>
-      </li>
-  </ul>
+
 

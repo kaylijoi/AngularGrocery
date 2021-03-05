@@ -18,4 +18,6 @@ export class GroceryComponent {
     this.tasks.push({name: this.task});
     this.task = '';
 }
+
+
 }
