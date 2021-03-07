@@ -6,8 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: [
       '../assets/css/bootstrap.min.css'
   ]
-
-
 })
 
 export class GroceryComponent {
@@ -17,7 +15,5 @@ export class GroceryComponent {
   onClick(){
     this.tasks.push({name: this.task});
     this.task = '';
-}
-
-
+  }
 }
